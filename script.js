@@ -33,6 +33,11 @@ addtaskbutton.addEventListener('click', ()=>{
     console.log(tasks);
     
 });
+todoInput.addEventListener('keydown' , (event)=>{  //for wroking enter as same task by the addtaskbutton
+    if(event.key=="Enter"){
+        addtaskbutton.click();
+    }
+})
 // ## STEP 3..//
 // now save to local storage.. 
 function savetasks(){
